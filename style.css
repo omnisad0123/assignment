@@ -63,6 +63,8 @@ body {
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
     margin-right: 20px;
+    flex: 1;
+    /* Take up remaining space */
 }
 
 .featured h3 {
@@ -168,5 +170,29 @@ body {
         width: calc(50% - 10px);
         margin-right: 20px;
         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .featured {
+        width: 100%;
+        margin-right: 0;
+        margin: 20px;
+    }
+
+    .news-container {
+        width: 100%;
+        order: -1;
+        /* Move news-container to the top */
+    }
+
+    .blog {
+        flex: 0 0 100%;
+        width: 100%;
+        margin-right: 0;
     }
 }
