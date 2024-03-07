@@ -187,7 +187,6 @@ body {
     .news-container {
         width: 100%;
         order: -1;
-        /* Move news-container to the top */
     }
 
     .blog {
