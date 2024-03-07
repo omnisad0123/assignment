@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgba(0, 0, 0, .95);
+}
+
+.navbar {
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 12px;
+}
+
+.nabicon {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.left {
+    align-items: center;
+    display: flex;
+    margin-left: 30px;
+}
+
+.left .title {
+    margin-left: 12px;
+    font-size: 27px;
+    color: #e90606;
+    font-family: Georgia, serif;
+    font-weight: 500;
+}
+
+.search {
+    display: flex;
+}
+
+.search-container {
+    display: flex;
+}
+
+.search-container input {
+    display: flex;
+    border: none;
+    font-family: Oswald, Lora, georgia, times, serif;
+}
+
+.main {
+    display: flex;
+    margin: 0 auto;
+    margin-left: 122px;
+    padding: 20px;
+}
+
+.featured {
+    width: 70%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+.featured h3 {
+    font-size: 31px;
+    font-weight: 400;
+    margin: 8px;
+}
+
+.news-container {
+    width: 20vw;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.news-container h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 18px;
+}
+
+.news-card {
+    margin-left: 18px;
+    margin-top: 22px;
+    margin-bottom: 22;
+    margin-right: 22;
+}
+
+.news-card a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.news-card div {
+    display: flex;
+}
+
+.heading {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.blog {
+    flex: 0 0 auto;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.blog .blogpost {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.blogpost h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blogpost .para {
+    font-size: 16px;
+}
+
+.blogpost {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.blogpost h4 {
+    font-size: 16px;
+    color: #e90606;
+    margin-bottom: 10px;
+}
+
+.blogpost .para {
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+    .heading {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .blog {
+        flex: 0 0 calc(50% - 10px);
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .heading {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .blog {
+        flex: 0 0 auto;
+        width: calc(50% - 10px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
